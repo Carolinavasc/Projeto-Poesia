@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Poiret+One&display=swap');
+
+:root {
+    --font01: 'Lobster Two', cursive;
+    --font02: 'Poiret One', cursive; 
+    --cor01:#F78F8F;
+    --cor02: #C74343;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body{
+    background-color: #F78F8F;
+    min-width: 80vh;
+    font-family: var(--font02);
+}
+
+header{
+    background-color: var(--cor02);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.363);
+}
+
+header > h1 {
+    font-family: var(--font01);
+    font-size: 7vw;
+}
+
+header > p{
+    font-family: var(--font02);
+    font-size: 1.5em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+a:hover{
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.377);
+}
+
+section{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        line-height: 2em;
+        padding-left: 5vw;
+        font-family: var(--font2);
+        font-size: 5vw;
+    }
+    
+    section > p{
+        padding-bottom: 15px;
+    }
+
+section.txt{
+    background-color:  rgba(255, 255, 255, 0.836);
+    color: black;
+}
+
+section.img {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.747);
+    background-attachment: fixed;
+}
+
+section.img > p{
+    background-color: rgba(0, 0, 0, 0.274);
+    display: inline-block;
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
+    padding: 5px;
+}
+
+section#img01 {
+background-image: url('../imagens/pexels-brett-sayles-6424244.jpg');
+background-position: right center;
+}
+
+section#img02 {
+background-image: url('../imagens/pexels-moldy-vintages-8568160.jpg');
+background-position: center center; 
+}
+
+footer {
+    background-color: #C74343;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
